@@ -62,7 +62,7 @@ const readNote=(title) => {
     const notes= loadNotes()
     const note=notes.find((note) => note.title === title)
     if(!note){
-        console.log(chalk.red.inverse('ERROR'))
+        console.log(chalk.bgRed('ERROR'))
     }else{
         console.log(chalk.blue.inverse(note.title))
         console.log(note.body)
